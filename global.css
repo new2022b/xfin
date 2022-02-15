@@ -1,0 +1,117 @@
+body {
+	background-color: #f2f4f5;
+}
+
+input::placeholder {
+	font-weight: 200;
+	position: relative;
+	top: 0
+}
+
+input {
+	height: 3.5rem;
+	padding-top: 0;
+	border-radius: .2rem !important;
+	background-color: #f9f9f9 !important;
+	border: 1px solid #b1b9bf !important
+}
+
+input:active,
+input:focus {
+	border: 1px solid #0272b6 !important;
+	box-shadow: none !important
+}
+
+.btn {
+	background-color: #0272b6 !important;
+	color: #fff !important;
+	border-radius: 30px !important;
+	padding: 12px 35px !important
+}
+
+.list-inline-item:not(:last-child) {
+	border-right: 1px solid #fff;
+	padding-right: 8px
+}
+
+ul li {
+	font-size: 13px;
+	font-weight: 300
+}
+
+.link {
+	color: #fff;
+	text-decoration: none
+}
+
+.link:hover {
+	color: #f8f8f8;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.accordion-button:not(.collapsed) {
+	color: #0c63e4;
+	background-color: transparent;
+	box-shadow: none
+}
+
+.accordion-button:focus {
+	z-index: 3;
+	border-color: transparent;
+	outline: 0;
+	box-shadow: none
+}
+
+.accordion-button {
+	padding: 1.5rem 1.25rem
+}
+
+.card1 {
+	padding: 1.5rem;
+	background: #fff;
+	box-shadow: 0 2px 5px -2px rgba(0, 0, 0, .43);
+	border-radius: .1rem;
+	width: 70%;
+	margin-bottom: 10px
+}
+
+.card2 {
+	background: #fff;
+	box-shadow: 0 2px 5px -2px rgba(0, 0, 0, .43);
+	border-radius: .1rem;
+	width: 70%;
+	margin-bottom: 20px
+}
+
+@media (max-width:576px) {
+
+	.card1,
+	.card2 {
+		width: 100%
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr !important;
+		grid-template-rows: 1fr !important
+	}
+}
+
+.grid-container {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-template-rows: 1fr 0fr;
+	grid-template-columns: 2fr 1fr
+}
+
+.main {
+	padding-top: 70px;
+	min-height: 93vh
+}
+
+@media (max-width:576px) {
+	.main {
+		padding-top: 0 !important;
+		min-height: 93vh
+	}
+}
